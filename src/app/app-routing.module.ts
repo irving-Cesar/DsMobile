@@ -3,17 +3,21 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'imc',
+    loadChildren: () => import('./imc/imc.module').then( m => m.ImcPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'imc',
     pathMatch: 'full'
   },
   {
     path: 'imc',
     loadChildren: () => import('./imc/imc.module').then( m => m.ImcPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
 ];
 
