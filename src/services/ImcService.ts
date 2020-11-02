@@ -3,7 +3,7 @@ import { IimcService } from 'src/interfaces/IimcService';
 import { Imc } from "src/models/imc";
 
 @Injectable({
-    providedIn: 'root'
+    'providedIn': 'root'
 })
 
 export class ImcService implements IimcService{
